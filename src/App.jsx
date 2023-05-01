@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { NewToDoForm } from "./NewToDoForm";
 import { TodoList } from "./TodoList";
+import "./App.css";
 
 function App() {
   const [todos, setToDos] = useState(() => {
