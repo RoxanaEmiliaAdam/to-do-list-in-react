@@ -1,4 +1,75 @@
-:root {
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: aliceblue;
+  color: black;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.label-new-item {
+  font-weight: bold;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.new-item-form input {
+  border: 2px solid hsl(200, 100%, 40%);
+  border-radius: 0.25em;
+  padding: 0.45em 0.5em;
+}
+.btn {
+  background-color: rgb(183, 242, 242);
+  padding: 0.45em 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+.btn-delete {
+  margin-left: 1rem;
+  background: hsl(0, 100%, 40%, 0.1);
+  border: 1px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 40%);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 10rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: flex-start;
+}
+
+/*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -67,3 +138,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { NewToDoForm } from "./NewToDoForm";
 import { TodoList } from "./TodoList";
-import "./App.css";
+import "./index.css";
 
 function App() {
   const [todos, setToDos] = useState(() => {
@@ -44,9 +44,15 @@ function App() {
 
   return (
     <>
-      <NewToDoForm addTodo={addTodo} />
-      <h1 className="header">ToDo List</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <div className="card">
+        <NewToDoForm addTodo={addTodo} />
+        <h1 className="header">ToDo List</h1>
+        <TodoList
+          todos={todos}
+          toggleTodo={toggleTodo}
+          deleteTodo={deleteTodo}
+        />
+      </div>
     </>
   );
 }
